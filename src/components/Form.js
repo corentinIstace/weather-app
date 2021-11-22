@@ -1,7 +1,6 @@
 import React, {useRef} from 'react'
 import axios from 'axios';
 import styled from 'styled-components';
-Content-Security-Policy: default-src 'none';
 
 const Form = ({error, setError, setWeather}) => {
     const onSubmitHandler = async() => {
