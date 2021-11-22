@@ -7,7 +7,7 @@ const Form = ({error, setError, setWeather}) => {
         try{
             const city = inputRef.current.value;
             const response = await axios.get(
-                `https://api.weatherapi.com/v1/forecast.json?key=${"14fd819372e5492d84e123441212610"}&q=${city}&days=3&aqi=no&alerts=no`                
+                `https://api.weatherapi.com/v1/forecast.json?key=${REACT_APP_API_KEY}&q=${city}&days=3&aqi=no&alerts=no`                
                 );
             setWeather(response.data);
             setError("");
