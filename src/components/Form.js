@@ -21,10 +21,10 @@ const Form = ({error, setError, setWeather}) => {
     return (
         <>
         <Container>
-            <div>
-            <Input ref={inputRef} type="text" />
-            <Button onClick={onSubmitHandler}>Search</Button>
-            </div>
+            <SearchBar>
+                <Input ref={inputRef} type="text" placeholder="Search"/>
+                <Button onClick={onSubmitHandler}>Search</Button>
+            </SearchBar>
             <Err>
             {error && <p>{error}</p>}
             </Err>
@@ -40,21 +40,37 @@ const Container = styled.div`
     align-items: center;
 `;
 
+const SearchBar = styled.div`
+    width: 30vw;
+    padding-top: 3rem;;
+    display: flex;
+    flex-direction:column;
+`;
+
 const Input = styled.input`
     padding: 0.5rem 1rem;
     border: 0;
-    border-radius: 0;
+    border-radius: 5px;
     &:focus{
         outline: none;
     };
 `;
 
 const Button = styled.button`
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 10vw;
+    margin-top: 20px;;
     padding: 0.5rem 1rem;
-    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
     outline: none;
-    background-color: grey;
-    border-radius: 0;
+    background-color: #65737e;
+    &:hover{
+        background-color:#4f5b66;
+    }
 `;
 
 const Err = styled.div`
