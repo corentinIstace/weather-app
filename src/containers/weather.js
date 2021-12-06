@@ -8,10 +8,21 @@ export const Weather = () => {
     const [error, setError] = useState("")
     const [weather, setWeather] = useState(null);
 
+    const days = [
+        "Sunday",
+        "Monday", 
+        "Tuesday", 
+        "Wednesday", 
+        "Thursday", 
+        "Friday", 
+        "Saturday", 
+    ];
+
     useEffect(() => {
         if(weather){
             console.log(weather);
         }
+
     }, [weather])
 
     return (
@@ -27,6 +38,7 @@ export const Weather = () => {
             {weather &&
                 weather.forecast.forecastday.map((weatherDay) => {
                     return <SingleWeather 
+                    day = {days[new Date(weatherDay.date).getDay()]}
                     key= {weatherDay.date} 
                     date={weatherDay.date} 
                     condition={weatherDay.day.condition}
