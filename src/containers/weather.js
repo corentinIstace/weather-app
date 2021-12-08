@@ -52,10 +52,13 @@ export const Weather = () => {
     )
 }
 const Container = styled.div`
-  color: white;
-  height: 100vh;
-  width: 100vw;
-  padding: 0em 6rem;
+    background-color: #0093E9;
+    background-image: linear-gradient(180deg, #0093E9 0%, #1e8bca 50%, #80D0C7 100%);
+    color: white;
+    width: 100vw;
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 0em 3rem;
 `;
 const ShowCity = styled.div`
     text-align: center;
