@@ -41,7 +41,8 @@ const Container = styled.div`
 `;
 
 const SearchBar = styled.div`
-    width: 30vw;
+    width: 100%;
+    max-width: 20rem;
     padding-top: 3rem;;
     display: flex;
     flex-direction:column;
@@ -60,14 +61,16 @@ const Button = styled.button`
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 10vw;
     margin-top: 20px;;
     padding: 0.5rem 1rem;
+    /* width: 10vw; */
+    border: none;
     border-radius: 10px;
     color: white;
     font-weight: bold;
     outline: none;
     background-color: #65737e;
+    cursor: pointer;
     &:hover{
         background-color:#4f5b66;
     }
