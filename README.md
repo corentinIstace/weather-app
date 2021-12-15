@@ -22,7 +22,7 @@ Contact:
 
 Corentin Istace
 
-E-mail: corentinistace1@gmail.com
-Github: https://github.com/corentinIstace
-Linkedin: https://www.linkedin.com/in/corentin-istace/
+E-mail: corentinistace1@gmail.com  
+Github: https://github.com/corentinIstace  
+Linkedin: https://www.linkedin.com/in/corentin-istace/  
 
